@@ -44,8 +44,27 @@ it should be starting to migrate like the image bellow:
 
 then open the url below and continue your setup till you reach the dashboard.
 - <http://127.0.0.1:9000>
+![sentry](https://github.com/amirajoodani/Sentry/assets/42912741/a41366b5-8114-44ba-a921-cfca7f714aae)
 
 <div align="center"><img loading="lazy" style="width:700px" src="./docs/sentry-dashboard.png"></div>
+
+then create django project . after that you get your specific data like DSN that you should paste it on settings.py . <br>
+
+in your environment install sentry-sdk : <br>
+``` python
+pip install --upgrade sentry-sdk
+```
+![sentr1 5](https://github.com/amirajoodani/Sentry/assets/42912741/5d69af9f-8c1b-45ac-bcbc-2b20f881c50e)
+
+then for creating random error , in project/urls.py paste this : <br>
+
+![sentry1 5](https://github.com/amirajoodani/Sentry/assets/42912741/d9be115b-ed30-4ae4-88c6-d937efa07053)
+
+after running your project , refer to http://localhost:8000/sentry-debug , so see this error : <br>
+
+![sentry2](https://github.com/amirajoodani/Sentry/assets/42912741/a94a6717-8dcd-4d56-b7ec-5c6bc6e71eb3)
+
+![sentry3](https://github.com/amirajoodani/Sentry/assets/42912741/da966677-d964-4c7d-87cf-8a8a800e45ae)
 
 
 ### up and running
